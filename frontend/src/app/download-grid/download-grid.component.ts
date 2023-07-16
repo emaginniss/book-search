@@ -61,6 +61,10 @@ export class DownloadGridComponent {
     // TIP: to find current time in milliseconds, use:
     // var  current_time_milliseconds = new Date().getTime();
 
+    if (milliseconds < 1) {
+      return 'less than a second ago'; //'just now' //or other string you like;
+    }
+
     function numberEnding (number: number) {
       return (number > 1) ? 's' : '';
     }

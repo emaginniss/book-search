@@ -31,3 +31,7 @@ flows:
 Both flows are the same until the result from the cache check is retrieved.  If the data is present and valid, that data
 is returned back through the call stack.  If it is not present, then the data is retrieved from the OpenLibrary client,
 cached, and then returned.
+
+## TODO
+Add a reaper that runs on a schedule to clean up the invalid cache entries.  This is needed to prevent unbounded
+database growth but isn't needed for an interview demo.
